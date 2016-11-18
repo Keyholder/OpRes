@@ -58,7 +58,7 @@ name-abstract : Аннотация
 ~ Equation { #payoff }
   u^a(s) =
   \begin{cases}
-    \frac{\nu^a}{\alpha^k(s)} \omega(s), & s^a = k(s) \\
+    \frac{\nu^a}{\alpha^{k(s)}(s)} \omega(s), & s^a = k(s) \\
     -\nu^a, & s^a \neq k(s)
   \end{cases}
 ~
