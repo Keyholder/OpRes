@@ -34,7 +34,7 @@ name-abstract : Аннотация
 Нормальная форма описанной игры выглядит следующим образом:
 
 ~ Equation { #nform }
-  G = \langle A, S^a, u^a(s), a \in A \rangle
+  G = \langle A, S, u^a(s), a \in A \rangle
 ~
 
 где m баронов-игроков
@@ -46,7 +46,7 @@ name-abstract : Аннотация
 выбирают из n принцев-стратегий
 
 ~ Equation { #stratgies }
-  S^a = \{ 1, 2, ..., n \}, \forall a \in A
+  S = \{ 1, 2, ..., n \}
 ~
 
 а выигрыши определяются так:
