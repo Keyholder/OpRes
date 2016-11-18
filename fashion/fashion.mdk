@@ -43,13 +43,13 @@ name-abstract : Аннотация
 
 где m баронов-игроков
 
-~ Equation { #players }
+~ Equation { #barons }
   A = \{ 1, 2, ..., m \}
 ~
 
 выбирают из n принцев-стратегий
 
-~ Equation { #stratgies }
+~ Equation { #princes }
   S = \{ 1, 2, ..., n \}
 ~
 
@@ -58,17 +58,26 @@ name-abstract : Аннотация
 ~ Equation { #payoff }
   u^a(s) =
   \begin{cases}
-    p^a \frac{\omega(s)}{\alpha(s)} , s^a = s^* \\
-    -p^a, s^a \neq s^*
+    \frac{\nu^a}{\alpha^k(s)} \omega(s), & s^a = k(s) \\
+    -\nu^a, & s^a \neq k(s)
   \end{cases}
 ~
 
-где $p^a > 0$ обозначает силу дружины каждого из баронов, a
+причём $\nu^a > 0$ обозначает силу дружины каждого из баронов, a
+
+~ Equation { #armies }
+  \alpha^i(s) = \sum_{a \in A, s^a = i} \nu^a
+~
 
 ~ Equation { #king }
-  s^* = \argmax_{s \in S} P^s
-  \sum_{a \in A, s^a = s} p^a
+  k(s) = \argmax_{i \in S} \alpha^i(s)
 ~
+
+~ Equation { #losers }
+  \omega(s) = \sum_{i \in S \backslash \{k\}}\alpha^i(s)
+~
+
+обозначают соответственно силу армии i-го принца, номер коронованного принца и суммарную силу армий не коронованных принцев.
 
 Figure [#fig-butterfly] in Section [#sec-intro] shows a monarch
 butterfly. Note that you can drag&drop images into the editor pane to
