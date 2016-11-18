@@ -15,6 +15,10 @@ Tex Header    :
 
 name-abstract : Аннотация
 
+~ MathDefs
+ \newcommand{\argmax}{\operatornamewithlimits{arg\,max}}
+~ 
+
 [TITLE]
 
 ~ Abstract
@@ -54,9 +58,16 @@ name-abstract : Аннотация
 ~ Equation { #payoff }
   u^a(s) =
   \begin{cases}
-    -p^a, a = \bar{a} \\
-    -p^a, a \neq \bar{a}
+    p^a \frac{\omega(s)}{\alpha(s)} , s^a = s^* \\
+    -p^a, s^a \neq s^*
   \end{cases}
+~
+
+где $p^a > 0$ обозначает силу дружины каждого из баронов, a
+
+~ Equation { #king }
+  s^* = \argmax_{s \in S} P^s
+  \sum_{a \in A, s^a = s} p^a
 ~
 
 Figure [#fig-butterfly] in Section [#sec-intro] shows a monarch
