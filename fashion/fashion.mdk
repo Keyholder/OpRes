@@ -73,7 +73,7 @@ name-abstract : Аннотация
   k(s) = \argmax_{i \in S} \alpha^i(s)
 ~
 
-~ Equation { #losers }
+~ Equation { #taxes }
   \omega(s) = \sum_{i \in S \backslash \{k\}}\alpha^i(s)
 ~
 
