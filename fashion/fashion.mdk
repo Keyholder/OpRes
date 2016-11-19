@@ -74,7 +74,7 @@ name-abstract : Аннотация
 ~
 
 ~ Equation { #taxes }
-  \omega(s) = \sum_{i \in S \backslash \{k\}}\alpha^i(s)
+  \omega(s) = \sum_{i \in S \backslash \{k(s)\}}\alpha^i(s)
 ~
 
 обозначают соответственно силу армии i-го принца, номер коронованного принца и суммарную силу армий не коронованных принцев.
