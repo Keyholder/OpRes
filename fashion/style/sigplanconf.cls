@@ -26,12 +26,13 @@
 %-----------------------------------------------------------------------------
 
 
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesClass{sigplanconf}[2013/07/02 v2.8 ACM SIGPLAN Proceedings]
+
+\usepackage{polyglossia}
 \setmainlanguage{russian} 
 \setotherlanguage{english}
 \newfontfamily\russianfont[Script=Cyrillic]{Cambria Math}
-
-\NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{sigplanconf}[2013/07/02 v2.8 ACM SIGPLAN Proceedings]
 
 % The following few pages contain LaTeX programming extensions adapted
 % from the ZzTeX macro package.

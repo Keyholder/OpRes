@@ -7,8 +7,6 @@ Email         : pdunan@gmail.com
 Bibliography  : opres.bib
 Doc class     : [reprint,nocopyrightspace]style/sigplanconf.cls
 
-Package       : polyglossia
-
 name-abstract : Аннотация
 
 ~ MathDefs
