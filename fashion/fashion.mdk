@@ -8,10 +8,6 @@ Bibliography  : opres.bib
 Doc class     : [reprint,nocopyrightspace]style/sigplanconf.cls
 
 Package       : polyglossia
-Tex Header    :
-    \setmainlanguage{russian} 
-    \setotherlanguage{english}
-    \newfontfamily\russianfont[Script=Cyrillic]{Cambria Math}
 
 name-abstract : Аннотация
 
