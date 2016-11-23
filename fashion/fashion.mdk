@@ -5,7 +5,13 @@ Affiliation   : МГУ, факультет ВМиК, кафедра ИО
 Email         : pdunan@gmail.com
 
 Bibliography  : opres.bib
-Doc class     : [reprint,nocopyrightspace]style/sigplanconf.cls
+Doc class     : [10pt]article
+
+Tex Header    :
+    \usepackage{polyglossia}
+    \setmainlanguage{russian} 
+    \setotherlanguage{english}
+    \newfontfamily\russianfont[Script=Cyrillic]{Cambria Math}
 
 name-abstract : Аннотация
 
