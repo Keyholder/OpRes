@@ -134,10 +134,8 @@ name-theorem     : Теорема
 Разобъём множество конкретных игровых ситуаций $\{s\} = A \to S$ на три непересекающихся подмножества следующими условиями:
 
 * $s^a = s^b = k(s) \qquad \Rightarrow \qquad u^a(s) = \frac{\nu^a}{\alpha^{k(s)}(s)} > \frac{\nu^b}{\alpha^{k(s)}(s)} = u^b(s)$
-
 * $s^a = s^b \neq k(s) \qquad \Rightarrow \qquad u^a(s) = u^b(s) = 0$
-
-* $s^a \neq s^b$, 
+* $s^a \neq s^b$, которое в свою очередь можно представить как объединение непересекающихся пар ситуаций $\{\left.s\right\|^{a,b}_{i,j}, \left.s\right\|^{a,b}_{j,i}\}$
 
 
 ~
