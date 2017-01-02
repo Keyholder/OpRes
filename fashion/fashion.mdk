@@ -136,11 +136,36 @@ name-theorem     : Теорема
 * $s^a = s^b = k(s) \qquad \Rightarrow \qquad u^a(s) = \frac{\nu^a}{\alpha^{k(s)}(s)} > \frac{\nu^b}{\alpha^{k(s)}(s)} = u^b(s)$
 * $s^a = s^b \neq k(s) \qquad \Rightarrow \qquad u^a(s) = u^b(s) = 0$
 * $s^a \neq s^b$, которое в свою очередь можно представить как объединение непересекающихся пар ситуаций $\{\left.s\right\|^{a,b}_{i,j}, \left.s\right\|^{a,b}_{j,i}\}$. Из $\pi^a = \pi^b$ с очевидностью следует $p(\left.s\right\|^{a,b}_{i,j} \mid \pi) = p(\left.s\right\|^{a,b}_{j,i} \mid \pi)$, а значит можно сравнивать $u^a(\left.s\right\|^{a,b}_{i,j}) + u^a(\left.s\right\|^{a,b}_{j,i})$ и $u^b(\left.s\right\|^{a,b}_{i,j}) + u^b(\left.s\right\|^{a,b}_{j,i})$. В зависимости от результата коронации возможны следующие случаи (с учётом произвольности обозначений $i$ и $j$, а также $\nu^a > \nu^b$):
-  - $k(\left.s\right\|^{a,b}_{i,j}) = k(\left.s\right\|^{a,b}_{j, i}) = i$
-  - $k(\left.s\right\|^{a,b}_{i,j}) = i, k(\left.s\right\|^{a,b}_{j, i}) = j$
+~
+
+~ Math
+  k(\left.s\right\|^{a,b}_{i,j}) = k(\left.s\right\|^{a,b}_{j, i}) = i
+  \qquad \Rightarrow \qquad
+  \begin{aligned}
+    u^a(\left.s\right\|^{a,b}_{i,j}) + u^a(\left.s\right\|^{a,b}_{j,i}) = \\
+    = \frac{\nu^a}{\alpha^i(\left.s\right\|^{a,b}_{j,j}) + \nu^a} + 0 > \\
+    > 0 + \frac{\nu^b}{\alpha^i(\left.s\right\|^{a,b}_{j,j}) + \nu^b} = \\
+    = u^b(\left.s\right\|^{a,b}_{i,j}) + u^b(\left.s\right\|^{a,b}_{j,i})
+  \end{aligned}
+~
+
+---
+
+~ Math
+  k(\left.s\right\|^{a,b}_{i,j}) = i, k(\left.s\right\|^{a,b}_{j, i}) = j
+  \qquad \Rightarrow \qquad
+  \begin{aligned}
+    u^a(\left.s\right\|^{a,b}_{i,j}) + u^a(\left.s\right\|^{a,b}_{j,i}) = \\
+    = \frac{\nu^a}{\alpha^i(\left.s\right\|^{a,b}_{i,j})} +
+    \frac{\nu^a}{\alpha^j(\left.s\right\|^{a,b}_{j,i})} > \\
+    > 0 + 0 = u^b(\left.s\right\|^{a,b}_{i,j}) + u^b(\left.s\right\|^{a,b}_{j,i})
+  \end{aligned}
+~
+
+---
+
   - $k(\left.s\right\|^{a,b}_{i,j}) = i, k(\left.s\right\|^{a,b}_{j, i}) \in S \backslash \{i, j\}$
   - $k(\left.s\right\|^{a,b}_{i,j}) = k(\left.s\right\|^{a,b}_{j, i}) \in S \backslash \{i, j\}$
-~
 
 ~ Lemma
 Пусть $\pi$ - ситуация равновесия по Нэшу игры [#mixed] и $\nu^a > \nu^b$. Тогда $u^a(\pi) > u^b(\pi)$. 
