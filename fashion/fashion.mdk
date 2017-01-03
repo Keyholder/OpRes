@@ -126,6 +126,16 @@ name-theorem     : Теорема
   \bar\Gamma = \langle A, \Pi, u^a(\pi), a \in A \rangle
 ~
 
+Докажем несколько свойств этой игры, потребующихся нам в дальнейшем.
+
+~ Lemma { #not-null }
+Пусть $\pi$ - ситуация равновесия по Нэшу игры [#mixed]. Тогда $u^a(\pi) > 0, \forall a \in A$.
+~
+
+~ Proof
+Очевидно, что в любой ситуации стратегия $(\frac{1}{n}, \frac{1}{n}, ..., \frac{1}{n})$ обеспечивает барону ненулевое математическое ожидание выигрыша. $\qed$
+~
+
 ~ Lemma
 Пусть $\pi$ - ситуация равновесия по Нэшу игры [#mixed], $\nu^a > \nu^b$ и $\pi^a = \pi^b$. Тогда $u^a(\pi) > u^b(\pi)$. 
 ~
@@ -139,33 +149,52 @@ name-theorem     : Теорема
 ~
 
 ~ Math
-  k(\left.s\right\|^{a,b}_{i,j}) = k(\left.s\right\|^{a,b}_{j, i}) = i
-  \qquad \Rightarrow \qquad
   \begin{aligned}
-    u^a(\left.s\right\|^{a,b}_{i,j}) + u^a(\left.s\right\|^{a,b}_{j,i}) = \\
-    = \frac{\nu^a}{\alpha^i(\left.s\right\|^{a,b}_{j,j}) + \nu^a} + 0 > \\
-    > 0 + \frac{\nu^b}{\alpha^i(\left.s\right\|^{a,b}_{j,j}) + \nu^b} = \\
-    = u^b(\left.s\right\|^{a,b}_{i,j}) + u^b(\left.s\right\|^{a,b}_{j,i})
+    \left.\begin{aligned}
+      k(\left.s\right\|^{a,b}_{i,j}) &= i, \\
+      k(\left.s\right\|^{a,b}_{j, i}) &= i
+    \end{aligned}\right]
+    &\Rightarrow
+    \left[\begin{aligned}
+      u^a(\left.s\right\|^{a,b}_{i,j}) + u^a(\left.s\right\|^{a,b}_{j,i})
+      &= \frac{\nu^a}{\alpha^i(\left.s\right\|^{a,b}_{j,j}) + \nu^a} \\
+      u^b(\left.s\right\|^{a,b}_{i,j}) + u^b(\left.s\right\|^{a,b}_{j,i})
+      &= \frac{\nu^b}{\alpha^i(\left.s\right\|^{a,b}_{j,j}) + \nu^b}
+    \end{aligned}\right.\\
+    \left.\begin{aligned}
+      k(\left.s\right\|^{a,b}_{i,j}) &= i, \\
+      k(\left.s\right\|^{a,b}_{j, i}) &= j
+    \end{aligned}\right]
+    &\Rightarrow
+    \left[\begin{aligned}
+      u^a(\left.s\right\|^{a,b}_{i,j}) + u^a(\left.s\right\|^{a,b}_{j,i})
+      &= \frac{\nu^a}{\alpha^i(\left.s\right\|^{a,b}_{i,j})} +
+      \frac{\nu^a}{\alpha^j(\left.s\right\|^{a,b}_{j,i})} \\
+      u^b(\left.s\right\|^{a,b}_{i,j}) + u^b(\left.s\right\|^{a,b}_{j,i}) &= 0
+    \end{aligned}\right.\\
+    \left.\begin{aligned}
+      k(\left.s\right\|^{a,b}_{i,j}) &= i, \\
+      k(\left.s\right\|^{a,b}_{j, i}) &\in S \backslash \{i, j\}
+    \end{aligned}\right]
+    &\Rightarrow
+    \left[\begin{aligned}
+      u^a(\left.s\right\|^{a,b}_{i,j}) + u^a(\left.s\right\|^{a,b}_{j,i})
+      &= \frac{\nu^a}{\alpha^i(\left.s\right\|^{a,b}_{i,j})} \\
+      u^b(\left.s\right\|^{a,b}_{i,j}) + u^b(\left.s\right\|^{a,b}_{j,i}) &= 0
+    \end{aligned}\right.\\
+    \left.\begin{aligned}
+      k(\left.s\right\|^{a,b}_{i,j}) &\in S \backslash \{i, j\}, \\
+      k(\left.s\right\|^{a,b}_{j, i}) &\in S \backslash \{i, j\}
+    \end{aligned}\right]
+    &\Rightarrow
+    \left[\begin{aligned}
+      u^a(\left.s\right\|^{a,b}_{i,j}) + u^a(\left.s\right\|^{a,b}_{j,i}) &= 0 \\
+      u^b(\left.s\right\|^{a,b}_{i,j}) + u^b(\left.s\right\|^{a,b}_{j,i}) &= 0
+    \end{aligned}\right.
   \end{aligned}
 ~
 
----
-
-~ Math
-  k(\left.s\right\|^{a,b}_{i,j}) = i, k(\left.s\right\|^{a,b}_{j, i}) = j
-  \qquad \Rightarrow \qquad
-  \begin{aligned}
-    u^a(\left.s\right\|^{a,b}_{i,j}) + u^a(\left.s\right\|^{a,b}_{j,i}) = \\
-    = \frac{\nu^a}{\alpha^i(\left.s\right\|^{a,b}_{i,j})} +
-    \frac{\nu^a}{\alpha^j(\left.s\right\|^{a,b}_{j,i})} > \\
-    > 0 + 0 = u^b(\left.s\right\|^{a,b}_{i,j}) + u^b(\left.s\right\|^{a,b}_{j,i})
-  \end{aligned}
-~
-
----
-
-  - $k(\left.s\right\|^{a,b}_{i,j}) = i, k(\left.s\right\|^{a,b}_{j, i}) \in S \backslash \{i, j\}$
-  - $k(\left.s\right\|^{a,b}_{i,j}) = k(\left.s\right\|^{a,b}_{j, i}) \in S \backslash \{i, j\}$
+Несложно заметить, что в первых трёх случаях $u^a(\left.s\right\|^{a,b}_{i,j}) + u^a(\left.s\right\|^{a,b}_{j,i}) > u^b(\left.s\right\|^{a,b}_{i,j}) + u^b(\left.s\right\|^{a,b}_{j,i})$ и только в четвёртом обе суммы равны нулю. Вкупе с вышерассмотренными ситуациями $s^a = s^b$ из этого следует, что $u^a(\pi) \ge u^b(\pi)$, причём равенство достигается только если $u^a(\pi) = u^b(\pi) = 0$, что невозможно в силу леммы [#not-null]. $\qed$
 
 ~ Lemma
 Пусть $\pi$ - ситуация равновесия по Нэшу игры [#mixed] и $\nu^a > \nu^b$. Тогда $u^a(\pi) > u^b(\pi)$. 
