@@ -1,0 +1,18 @@
+Title         : Война форматов
+
+Author        : М. А. Савченко
+Affiliation   : МГУ, факультет ВМиК, кафедра ИО
+Email         : pdunan@gmail.com
+
+Bibliography  : example.bib
+Doc class     : [10pt]article
+
+Tex Header    :
+    \usepackage{polyglossia}
+    \setmainlanguage{russian} 
+    \setotherlanguage{english}
+    \newfontfamily\russianfont[Script=Cyrillic]{Cambria Math}
+
+[TITLE]
+
+[BIB]
