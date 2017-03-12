@@ -1,11 +1,23 @@
 [INCLUDE=presentation]
-Title         : Demo presentation in Madoko
-Sub Title     : In both HTML and PDF
-Author        : Daan Leijen
-Affiliation   : Microsoft Research
-Email         : daan@microsoft.com
-Reveal Theme  : sky
+Title         : 
+Sub Title     : Частично коррелированные равновесия в игровых моделях конкуренции
+
+Author        : М. А. Савченко
+Affiliation   : кафедра исследования операций
+Email         : pdunan@gmail.com
+
+Author        : А. А. Васин
+Affiliation   : кафедра исследования операций
+Email         : foravas@yandex.ru
+
+Reveal Theme  : serif
 Beamer Theme  : singapore
+
+Tex Header    :
+    \usepackage{polyglossia}
+    \setmainlanguage{russian} 
+    \setotherlanguage{english}
+    \newfontfamily\russianfont[Script=Cyrillic]{Cambria Math}
 
 [TITLE]
 
