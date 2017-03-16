@@ -84,7 +84,7 @@ Tex Header    :
 ~
 
 ~ Math
-  \mathbf{1}_X(x) \cdot y =
+  \boldsymbol{1}_X(x) \cdot y =
   \begin{cases}
     y, & x \in X \\
     0, & x \notin X
@@ -92,15 +92,18 @@ Tex Header    :
 ~
 
 ~ Math
-  I^a_P(\theta) = (\mathbf{1}_P(a, 1) \cdot \theta^1, \mathbf{1}_P(a, 2) \cdot \theta^2, ..., \mathbf{1}_P(a, n) \cdot \theta^n)
+  I^a_P(\theta) = (
+    \boldsymbol{1}_P(a, 1) \cdot \theta^1,
+    \boldsymbol{1}_P(a, 2) \cdot \theta^2, ...,
+    \boldsymbol{1}_P(a, n) \cdot \theta^n)
 ~
 
 ~ Math
-  \Phi^a(P) = \{I^a_P(\theta)\} \to S^a
+  \Phi^a_P = \{I^a_P(\theta)\} \to S^a
 ~
 
 ~ Math
-  \bar\Gamma(P) = \langle A, \Phi^a(P), u^a(\phi, \theta), a \in A \rangle
+  \bar\Gamma(P) = \langle A, \Phi^a_P, u^a(\phi, \theta), a \in A \rangle
 ~
 
 # Madoko Presentation
