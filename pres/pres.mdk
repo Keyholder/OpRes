@@ -73,6 +73,36 @@ Tex Header    :
 
 ## Частично коррелированные стратегии
 
+&bigskip;
+
+~ Math
+  \theta = (\theta^1, \theta^2, ..., \theta^n)
+~
+
+~ Math
+  P \subseteq \{ 1, 2, ..., m \} \times \{ 1, 2, ..., n \}
+~
+
+~ Math
+  \mathbf{1}_X(x) \cdot y =
+  \begin{cases}
+    y, & x \in X \\
+    0, & x \notin X
+  \end{cases}
+~
+
+~ Math
+  I^a_P(\theta) = (\mathbf{1}_P(a, 1) \cdot \theta^1, \mathbf{1}_P(a, 2) \cdot \theta^2, ..., \mathbf{1}_P(a, n) \cdot \theta^n)
+~
+
+~ Math
+  \Phi^a(P) = \{I^a_P(\theta)\} \to S^a
+~
+
+~ Math
+  \bar\Gamma(P) = \langle A, \Phi^a(P), u^a(\phi, \theta), a \in A \rangle
+~
+
 # Madoko Presentation
 
 Using [Madoko] it is easy to create beautiful presentations.
