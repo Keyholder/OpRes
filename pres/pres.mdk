@@ -25,7 +25,7 @@ Tex Header    :
 
 [TOC]
 
-# Различные смешанные расширения игр в нормальной форме
+# Смешанные расширения игр в нормальной форме
 
 &bigskip;
 
@@ -104,6 +104,50 @@ Tex Header    :
 
 ~ Math
   \bar\Gamma(P) = \langle A, \Phi^a_P, u^a(\phi, \theta), a \in A \rangle
+~
+
+# Война форматов
+
+&bigskip;
+
+* рынок высокотехнологичных устройств
+* несколько конкурирующих компаний
+* два новых несовместимых формата
+* на выбор покупателей влияет сетевой эффект
+
+## Нормальная форма игры
+
+&bigskip;
+
+~ Math
+  A = \{ 1, 2, ..., m \}
+~
+
+~ Math
+  \nu = (\nu^1, \nu^2, ..., \nu^m), \;
+  0 < \nu^a < \frac{1}{2}, \forall a \in A, \;
+  \sum_{a \in A} \nu^a \equiv 1
+~
+
+~ Math
+  S^a = \{
+    (s^a_\circ, s^a_\bullet) \mid
+    s^a_\circ \ge 0, s^a_\bullet \ge 0, s^a_\circ + s^a_\bullet = \nu^a\}
+~
+
+~ Math
+  \alpha_\circ(s) = \sum_{a \in A} s^a_\circ, \qquad
+  \alpha_\bullet(s) = \sum_{a \in A} s^a_\bullet
+~
+
+~ Math
+  u^a(s) =
+    \frac{s^a_\circ}{\alpha_\circ(s)} k(\alpha_\circ(s)) +
+    \frac{s^a_\bullet}{\alpha_\bullet(s)} k(\alpha_\bullet(s))
+~
+
+~ Math
+  \Gamma(\nu) = \langle A, S^a, u^a(s), a \in A \rangle
 ~
 
 # Madoko Presentation
