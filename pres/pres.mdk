@@ -25,12 +25,53 @@ Tex Header    :
 
 [TOC]
 
-## Смешанные стратегии как реакции на независимые случайные события
+# Различные смешанные расширения игр в нормальной форме
 
-* Рассмотрим игру с нормальной формой $\Gamma = \langle A = \{ 1, 2, ..., m \}, S^a, u^a(s), a \in A \rangle$
-* Дополним игру параметром $\theta = (\theta^1, \theta^2, ..., \theta^m)$ (состояние природы)
-* Вместо прежних пространств чистых стратегий $S^a$ возьмём пространства функций $\Phi^a = \{\theta^a\} \to S^a$
-* Получившаяся игра $\bar\Gamma(\theta) = \langle A, \Phi^a, u^a(\phi, \theta), a \in A \rangle$ будет изоморфна смешанному расширению игры $\Gamma$, если $\theta^1, \theta^2, ..., \theta^m$ -- независимые случайные величины со стандартным равномерным распределением
+&bigskip;
+
+~ Begin Framed  { padding:1ex; display:inline-block }
+  ~ Math
+    A = \{ 1, 2, ..., m \}
+  ~
+
+  ~ Math
+    \Gamma = \langle A, S^a, u^a(s), a \in A \rangle
+  ~
+~ End Framed
+
+## Независимые смешанные стратегии
+
+&bigskip;
+
+~ Math
+  \theta = (\theta^1, \theta^2, ..., \theta^m)
+~
+
+~ Math
+  \Phi^a = \{\theta^a\} \to S^a
+~
+
+~ Math
+  \bar\Gamma = \langle A, \Phi^a, u^a(\phi, \theta), a \in A \rangle
+~
+
+## Коррелированные стратегии
+
+&bigskip;
+
+~ Math
+  \theta = (\theta^0, \theta^1, \theta^2, ..., \theta^m)
+~
+
+~ Math
+  \Phi^a = \{(\theta^0, \theta^a)\} \to S^a
+~
+
+~ Math
+  \bar\Gamma = \langle A, \Phi^a, u^a(\phi, \theta), a \in A \rangle
+~
+
+## Частично коррелированные стратегии
 
 # Madoko Presentation
 
