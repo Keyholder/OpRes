@@ -153,6 +153,7 @@ Package       : pst-plot
   \psset{xAxisLabel=$\alpha(s)$,yAxisLabel=$k(\alpha(s))$}
   \begin{psgraph}[Dx=0.5](0,0)(1,2){6cm}{3cm}
     \psplot[linecolor=blue]{0}{1}{1}
+
     %\psplot[linecolor=green]{0}{1}{x pi mul neg cos 1 add 2 div}
   \end{psgraph}
 ~
